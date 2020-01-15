@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "116838644788",
+    "firebase_url": "https://push-demo-db68e.firebaseio.com",
+    "project_id": "push-demo-db68e",
+    "storage_bucket": "push-demo-db68e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116838644788:android:21a8b86200d319c8ff9e61",
+        "android_client_info": {
+          "package_name": "org.nativescript.pushdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116838644788-0shgivfvn2eklq9a55std44c817nb2nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHzQ3hNKa3gxjKXcc_MPMkdu6HcXeryKk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116838644788-0shgivfvn2eklq9a55std44c817nb2nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
