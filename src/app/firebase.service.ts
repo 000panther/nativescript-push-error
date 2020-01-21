@@ -34,4 +34,13 @@ export class FirebaseService {
         console.log("firebase init error: ", error);
     });
   };
+
+  public addCallbackForNotificationService() {
+    firebase.addOnMessageReceivedCallback(
+        (message) => {
+            console.log('got message ' + this.serviceId);
+            console.log(message);
+        },
+    );
+  }
 }

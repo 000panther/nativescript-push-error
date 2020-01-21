@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { FirebaseService } from './firebase.service';
+import { FirebaseService } from "./firebase.service";
+
+let globalFirebaseService: any = null;
 
 @Component({
     selector: "ns-app",
@@ -7,12 +9,17 @@ import { FirebaseService } from './firebase.service';
 })
 export class AppComponent implements OnInit {
     componentId = null;
-    
+
     constructor(private firebaseService: FirebaseService) {
-        console.log("construct AppComponent");
+        console.log("construct AppComponent" + globalFirebaseService);
     }
 
     ngOnInit() {
-        this.firebaseService.init();
+        if (!globalFirebaseService) {
+            this.firebaseService.init();
+            globalFirebaseService = this.firebaseService;
+        } else {
+            this.firebaseService.addCallbackForNotificationService();
+        }
     }
 }
